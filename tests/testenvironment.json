@@ -1,0 +1,34 @@
+{
+    "onsauce": true,
+    "resultsFile": "SauceResults.xml",
+    "maxwaittime": "120000",
+    "loglevelmin": 0,
+    "xunitResultsFile": "test-reports.xml",
+    "qtest": {
+        "apiurl": "https://mobiquity.qtestnet.com/api",
+        "username": "spiderlms@mobiquityinc.com",
+        "password": "spideradminmob1",
+        "projectid": "7503",
+        "regressionsuiteid": "50910"
+    },
+    "sauce": {
+        "path": "sauce-storage:",
+        "host": "ondemand.saucelabs.com",
+        "port": "80",
+        "browserName": "",
+        "platformName": "Android",
+        "platformVersion": "4.4",
+        "deviceName": "Android Emulator",
+        "deviceType": "phone",
+        "username": "mobiquity",
+        "accesskey": "75b72184-3f8d-45d5-ae04-8d79d2b06ccb"
+    },
+    "local": {
+        "host": "0.0.0.0",
+        "port": "4723",
+        "platformName": "Android",
+        "platformVersion": "4.4",
+        "deviceName": "Android Emulator",
+        "app": "/Users/ecarmichael/Repos/Fire/Mobsource_GradleTemplate_Android/app/build/outputs/apk/app-debug.apk"
+    }
+}

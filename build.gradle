@@ -1,0 +1,43 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+def versionMajor = 1
+def versionMinor = 0
+def versionPatch = 0
+def versionBuild =  {
+    def jenkinsBuildNumber = System.getenv("BUILD_NUMBER")
+    return jenkinsBuildNumber != null ? jenkinsBuildNumber.toInteger() : 0
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.1.0'
+        classpath 'org.robolectric:robolectric-gradle-plugin:1.0.1'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+
+    ext {
+        applicationId = "com.mobiquityinc.prototype.wwnetworking"
+        compileSdkVersion = 22
+        buildToolsVersion = "21.1.2"
+        minSdkVersion = 16
+        targetSdkVersion = 22
+
+        versionCode = {
+            return versionMajor * 10000 + versionMinor * 1000 + versionPatch * 100
+        }
+
+        versionName = {
+            print(versionBuild())
+            return versionBuild() == 0 ?
+                    "${versionMajor}.${versionMinor}.${versionPatch}" :
+                    "${versionMajor}.${versionMinor}.${versionPatch}.${versionBuild()}"
+        }
+    }
+}
