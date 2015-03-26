@@ -62,10 +62,12 @@ dependencies {
     compile 'com.squareup.okhttp:okhttp-urlconnection:2.3.0'
     compile 'com.squareup.okhttp:okhttp:2.3.0'
 
+    // Timber - Logging
+    compile 'com.jakewharton.timber:timber:2.5.0'
 
     // ================== TESTING LIBRARIES ======================
     testCompile 'junit:junit:4.12'
-       
+    testCompile 'org.apache.maven:maven-ant-tasks:2.1.3'
     testCompile('org.robolectric:robolectric:2.4') {
         exclude group: 'org.apache.httpcomponents'
         exclude module: 'commons-logging'
