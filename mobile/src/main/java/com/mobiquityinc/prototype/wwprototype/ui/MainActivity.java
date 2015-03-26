@@ -35,7 +35,7 @@ public class MainActivity extends BaseActivity
 
     @OnClick(R.id.btn_get_weather)
     void getWeather() {
-        new WeatherAsyncTask("Gainesville,FL").execute();
+        new WeatherAsyncTask(getString(R.string.city)).execute();
     }
 
     class WeatherAsyncTask extends AsyncTask<Void, Void, City> {
@@ -49,13 +49,13 @@ public class MainActivity extends BaseActivity
         @Override
         protected City doInBackground(Void... params) {
             WeatherService weatherService = restAdapter.create(WeatherService.class);
-            City cityWeather = weatherService.getCityWeatherData("Gainesville,FL");
+            City cityWeather = weatherService.getCityWeatherData(cityName);
             return cityWeather;
         }
 
         @Override
         protected void onPostExecute(City city) {
-            weatherContent.setText(city.toString());
+            weatherContent.setText(city.getName());
         }
     }
 
