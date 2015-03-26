@@ -34,7 +34,6 @@ allprojects {
         }
 
         versionName = {
-            print(versionBuild())
             return versionBuild() == 0 ?
                     "${versionMajor}.${versionMinor}.${versionPatch}" :
                     "${versionMajor}.${versionMinor}.${versionPatch}.${versionBuild()}"
