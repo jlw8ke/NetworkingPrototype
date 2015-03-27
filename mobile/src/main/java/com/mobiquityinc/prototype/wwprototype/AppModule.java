@@ -11,14 +11,14 @@ import dagger.Provides;
 
 @Module(
         library = true,
-        injects = WWApplication.class,
+        injects = WeatherApplication.class,
         includes = RestModule.class
 )
 public final class AppModule {
 
-    private final WWApplication application;
+    private final WeatherApplication application;
 
-    public AppModule(WWApplication application) {
+    public AppModule(WeatherApplication application) {
         this.application = application;
     }
 

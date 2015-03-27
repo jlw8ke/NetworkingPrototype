@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
 
 @RunWith(CustomTestRunner.class)
 @Config(emulateSdk = 18)
-public class WWApplicationTest {
+public class WeatherApplicationTest {
 
     @Test
     public void testApplicationImplementsInjectable() {

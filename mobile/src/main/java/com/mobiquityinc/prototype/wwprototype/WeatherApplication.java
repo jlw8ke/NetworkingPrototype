@@ -5,7 +5,7 @@ import android.app.Application;
 import dagger.ObjectGraph;
 import timber.log.Timber;
 
-public class WWApplication extends Application implements Injectable {
+public class WeatherApplication extends Application implements Injectable {
 
     private ObjectGraph objectGraph;
 

@@ -30,6 +30,7 @@ public final class UIModule {
     UIModule(Activity activity) {
         this.activity = activity;
     }
+
     @Provides
     @Singleton
     @ForActivity
