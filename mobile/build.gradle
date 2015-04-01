@@ -1,3 +1,7 @@
+repositories {
+    maven { url = "https://oss.sonatype.org/content/repositories/snapshots" }
+}
+
 apply plugin: 'com.android.application'
 android {
     compileSdkVersion project.ext.compileSdkVersion
@@ -13,8 +17,7 @@ android {
 
     buildTypes {
         debug {
-            //applicationIdSuffix ".debug"
-            minifyEnabled false
+            applicationIdSuffix ".debug"
             testCoverageEnabled true
         }
         release {
@@ -36,8 +39,6 @@ android {
         exclude 'META-INF/NOTICE'
     }
 }
-
-//apply from: '../robolectric.gradle'
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -67,7 +68,7 @@ dependencies {
     testCompile ('com.squareup:fest-android:1.0.8') {
         exclude group: 'com.android.support'
     }
-    testCompile('org.robolectric:robolectric:3.0-rc2') {
+    testCompile('org.robolectric:robolectric:3.0-SNAPSHOT') {
         exclude group: 'org.apache.httpcomponents', module: 'httpclient'
         exclude group: 'commons-logging', module: 'commons-logging'
     }

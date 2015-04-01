@@ -16,8 +16,8 @@ import butterknife.ButterKnife;
 
 import static org.junit.Assert.*;
 
-@RunWith(RobolectricGradleTestRunner.class)
-@Config(constants = BuildConfig.class, emulateSdk = 21)
+@RunWith(CustomTestRunner.class)
+@Config(constants = BuildConfig.class)
 public class MainActivityTest {
 
     MainActivity activity;

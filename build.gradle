@@ -19,12 +19,10 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
-        maven {
-            url "https://oss.sonatype.org/content/repositories/snapshots"
-        }
     }
 
     ext {
+        applicationId = "com.mobiquityinc.prototype.wwnetworking"
         compileSdkVersion = 22
         buildToolsVersion = "22.0.0"
         minSdkVersion = 16

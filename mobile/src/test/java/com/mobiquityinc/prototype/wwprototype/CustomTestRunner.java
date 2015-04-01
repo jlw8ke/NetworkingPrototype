@@ -5,7 +5,9 @@ import org.robolectric.RobolectricGradleTestRunner;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 import org.robolectric.manifest.AndroidManifest;
+import org.robolectric.res.FileFsFile;
 import org.robolectric.res.Fs;
+import org.robolectric.res.FsFile;
 
 public class CustomTestRunner extends RobolectricGradleTestRunner {
 
@@ -17,31 +19,29 @@ public class CustomTestRunner extends RobolectricGradleTestRunner {
 
     @Override
     protected AndroidManifest getAppManifest(Config config) {
-        
-        String myAppPath = "./src/main";
-        String manifestPath = myAppPath + "/AndroidManifest.xml";
-        String resPath = myAppPath + "/res";
-        String assetPath = myAppPath + "/assets";
-        AndroidManifest manifest = new AndroidManifest(Fs.fileFromPath(manifestPath),
-                Fs.fileFromPath(resPath),
-                Fs.fileFromPath(assetPath)) {
-            @Override
-            public int getTargetSdkVersion() {
-                return MAX_SDK_SUPPORTED_BY_ROBOLECTRIC;
-            }
-        };
-        manifest.setPackageName("com.mobiquityinc.prototype.wwprototype");
-        return manifest;
-        /*
-        return new AndroidManifest(manifest.getAndroidManifestFile(),
-                manifest.getResDirectory(),
-                manifest.getAssetsDirectory()) {
+        AndroidManifest appManifest = super.getAppManifest(config);
+        String moduleRoot = getModuleRootPath(config);
+
+        FsFile androidManifestFile = FileFsFile.from(moduleRoot, appManifest.getAndroidManifestFile().getPath());
+        if(!androidManifestFile.exists()) {
+            androidManifestFile = FileFsFile.from(moduleRoot,  appManifest.getAndroidManifestFile().getPath().replace("bundles", "manifests/full"));
+        }
+        FsFile resDirectory = FileFsFile.from(moduleRoot, appManifest.getResDirectory().getPath());
+        FsFile assetsDirectory = FileFsFile.from(moduleRoot, appManifest.getAssetsDirectory().getPath());
+        AndroidManifest debugManifest = new AndroidManifest(androidManifestFile, resDirectory, assetsDirectory) {
             @Override
             public int getTargetSdkVersion() {
                 return MAX_SDK_SUPPORTED_BY_ROBOLECTRIC;
             }
 
-        };*/
+        };
+        debugManifest.setPackageName("com.mobiquityinc.prototype.wwprototype.debug");
+        return debugManifest;
+    }
+
+    private String getModuleRootPath(Config config) {
+        String moduleRoot = config.constants().getResource("").toString().replace("file:", "");
+        return moduleRoot.substring(0, moduleRoot.indexOf("/build"));
     }
 
 
