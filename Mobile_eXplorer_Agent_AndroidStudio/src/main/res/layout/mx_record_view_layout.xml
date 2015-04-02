@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent">
+
+    <Button
+        android:id="@+id/record_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="?attr/mx_btn_start_record"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_record_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/record_btn"
+        android:layout_alignTop="@+id/record_btn"
+        android:layout_toLeftOf="@+id/record_btn">
+
+        <TextView
+            android:id="@+id/tv_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="?attr/mx_text_normal_color"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/bt_animation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="?attr/mx_btn_record_timer_animation"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/clear_record_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="?attr/mx_btn_record_timer"/>
+    </RelativeLayout>
+
+</RelativeLayout>

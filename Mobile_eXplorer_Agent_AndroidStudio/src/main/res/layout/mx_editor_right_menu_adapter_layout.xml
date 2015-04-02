@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rootView">
+
+        <RelativeLayout android:id="@+id/contentView"
+            android:layout_width="270dp"
+            android:layout_height="180dp"
+            android:layout_centerInParent="true">
+
+            <RelativeLayout
+                android:id="@+id/selectedView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp">
+
+                <ImageView
+                    android:id="@+id/screenView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:scaleType="fitXY"/>
+
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:background="?attr/mx_shape_screen_count_background"
+                    android:focusableInTouchMode="false">
+
+                    <TextView
+                        android:id="@+id/screenIndex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:enabled="false"
+                        android:focusableInTouchMode="false"
+                        android:text="1"
+                        android:textColor="?attr/mx_text_normal_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="?attr/mx_btn_remove"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:visibility="visible"/>
+
+            <RelativeLayout
+                android:id="@+id/syncButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="?attr/mx_btn_stt_local"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:visibility="visible"
+                android:layout_alignParentRight="true">
+
+                <ProgressBar
+                    android:id="@+id/loadingIndicator"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:visibility="visible"/>
+            </RelativeLayout>
+        </RelativeLayout>
+</RelativeLayout>

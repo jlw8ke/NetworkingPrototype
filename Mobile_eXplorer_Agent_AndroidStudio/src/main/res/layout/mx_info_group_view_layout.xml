@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/mx_title_bar_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/mx_line_color"/>
+
+        <TextView
+            android:id="@+id/groupName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Header"
+            android:textColor="?attr/mx_text_normal_color"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rootView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/mx_background_color">
+
+    <LinearLayout
+        android:id="@+id/contentView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:id="@+id/qTestView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:minWidth="70dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/qTestButton"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:button="?attr/mx_btn_qtest"
+                    android:checked="true"/>
+
+                <TextView
+                    android:id="@+id/qTestLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/str_qtest"
+                    android:textColor="?attr/mx_text_normal_color"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/guessView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:minWidth="70dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/guestButton"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:button="?attr/mx_btn_guest"/>
+
+                <TextView
+                    android:id="@+id/guestLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/str_guest"
+                    android:textColor="?attr/mx_text_disable_color"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="60dp">
+                
+                <LinearLayout android:id="@+id/emtyFakeLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"/>
+
+                <EditText
+                    android:id="@+id/qTestHostEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="2dp"
+                    android:layout_below="@+id/emtyFakeLayout"
+                    android:height="150dp"
+                    android:background="?attr/mx_shape_round_edit_text"
+                    android:hint="@string/str_qtest_host_hint"
+                    android:imeOptions="actionNext"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="?attr/mx_text_edit_color"
+                    android:textSize="14sp"
+                    android:visibility="visible"/>
+
+                <EditText
+                    android:id="@+id/qTestUserEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/qTestHostEditText"
+                    android:layout_margin="2dp"
+                    android:height="150dp"
+                    android:background="?attr/mx_shape_round_edit_text"
+                    android:hint="@string/str_qtest_user_hint"
+                    android:imeOptions="actionNext"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="?attr/mx_text_edit_color"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/qTestPassEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/qTestUserEditText"
+                    android:layout_margin="2dp"
+                    android:background="?attr/mx_shape_round_edit_text"
+                    android:hint="@string/str_qtest_pass_hint"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="?attr/mx_text_edit_color"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/guestNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/qTestUserEditText"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="2dp"
+                    android:background="?attr/mx_shape_round_edit_text"
+                    android:hint="@string/str_guest_name_hint"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapWords"
+                    android:padding="8dp"
+                    android:singleLine="true"
+                    android:textColor="?attr/mx_text_edit_color"
+                    android:textSize="14sp"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <Button
+                    android:id="@+id/loginBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/mx_btn_go"/>
+
+                <ProgressBar
+                    android:id="@+id/loginIndicator"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:indeterminate="false"
+                    android:visibility="invisible"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

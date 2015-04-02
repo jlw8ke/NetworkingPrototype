@@ -1,0 +1,61 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qas.mexplorer" >
+
+    <!-- Mobile eXplorer Permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- deprecated in 5.0 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.GET_TOP_ACTIVITY_INFO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <application>
+
+        <!-- import Mobile Explorer Service -->
+        <service
+            android:name="com.qas.mexplorer.service.MXService"
+            android:exported="true" />
+
+        <!-- import Mobile Explorer Activities -->
+        <activity
+            android:name="com.qas.mexplorer.app.MXInformationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MXTheme.Dark" />
+        <activity
+            android:name="com.qas.mexplorer.app.MXFlashActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MXTheme.Dark" />
+        <activity
+            android:name="com.qas.mexplorer.app.MXCreateSessionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MXTheme.Dark" />
+        <activity
+            android:name="com.qas.mexplorer.editor.MXEditorActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/MXTheme.Dark"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.qas.mexplorer.editor.gallery.MXCustomGalleryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MXTheme.Dark" >
+            <intent-filter>
+                <action android:name="luminous.ACTION_PICK" />
+                <action android:name="luminous.ACTION_MULTIPLE_PICK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

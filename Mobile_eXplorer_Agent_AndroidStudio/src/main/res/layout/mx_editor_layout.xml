@@ -1,0 +1,146 @@
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <FrameLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray">
+
+        <RelativeLayout
+            android:id="@+id/drawingContentView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/mx_footer_bar_height"
+            android:layout_marginTop="@dimen/mx_header_bar_height"/>
+
+        <RelativeLayout
+            android:id="@+id/headerBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mx_header_bar_height"
+            android:layout_gravity="top"
+            android:background="?attr/mx_title_bar_color">
+
+            <Button
+                android:id="@+id/closeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="?attr/mx_btn_close"/>
+
+            <Button
+                android:id="@+id/list_view_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="?attr/mx_btn_right_menu"/>
+
+            <Button
+                android:id="@+id/action_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="?attr/mx_btn_left_menu"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?attr/mx_line_color"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="?attr/mx_line_color"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_footer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mx_footer_bar_height"
+            android:layout_gravity="bottom"
+            android:background="?attr/mx_title_bar_color">
+
+            <com.qas.mexplorer.editor.view.MXRecordView
+                android:id="@+id/record_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+            <LinearLayout
+                android:id="@+id/undo_redo_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/undo_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/mx_btn_undo"/>
+
+                <Button
+                    android:id="@+id/redo_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/mx_btn_redo"/>
+            </LinearLayout>
+
+            <ToggleButton
+                android:id="@+id/btn_show_drawbar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="?attr/mx_btn_toggle_pencil"
+                android:textOff=""
+                android:textOn=""/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?attr/mx_line_color"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="?attr/mx_line_color"/>
+        </RelativeLayout>
+
+        <com.qas.mexplorer.editor.view.MXDrawbar
+            android:id="@+id/drawBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mx_draw_bar_height"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/mx_footer_bar_height"/>
+
+        <com.qas.mexplorer.editor.view.MXDeleteView
+            android:id="@+id/deleteView"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="-50dp"/>
+
+    </FrameLayout>
+
+    <com.qas.mexplorer.editor.menu.MXLeftMenuView
+        android:id="@+id/rl_left_menu"
+        android:layout_width="@dimen/mx_left_menu_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"/>
+
+    <com.qas.mexplorer.editor.menu.MXRightMenuView
+        android:id="@+id/rl_right_menu"
+        android:layout_width="@dimen/mx_right_menu_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"/>
+
+</android.support.v4.widget.DrawerLayout>

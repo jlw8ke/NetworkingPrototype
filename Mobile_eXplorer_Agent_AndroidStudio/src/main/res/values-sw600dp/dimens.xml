@@ -1,0 +1,16 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw600dp devices (e.g. 7" tablets) here.
+    -->
+
+    <dimen name="mx_large_activity_dialog_width">400dp</dimen>
+    <dimen name="mx_large_activity_dialog_height">400dp</dimen>
+
+    <dimen name="mx_left_menu_width">320dp</dimen>
+    <dimen name="mx_right_menu_width">250dp</dimen>
+    <dimen name="mx_right_menu_thump_large_width">240dp</dimen>
+    <dimen name="mx_right_menu_thump_large_height">240dp</dimen>
+
+</resources>

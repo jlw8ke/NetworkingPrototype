@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rootView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?attr/mx_dialog_shadow_color"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:id="@+id/contentView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="?attr/mx_shape_corner_background"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/buttonsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:minWidth="200dp"
+            android:orientation="horizontal"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/buttonsLayout"
+            android:layout_alignStart="@+id/buttonsLayout"
+            android:layout_alignRight="@+id/buttonsLayout"
+            android:layout_alignLeft="@+id/buttonsLayout"
+            android:layout_below="@+id/buttonsLayout"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+			<View android:layout_width="0dp"
+			    android:layout_height="0dp"
+			    android:focusable="true"
+			    android:focusableInTouchMode="true"/>
+            <EditText
+                android:id="@+id/noteEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="70dp"
+                android:background="?attr/mx_shape_round_edit_text"
+                android:hint="@string/str_note_hint"
+                android:imeOptions="actionDone"
+                android:padding="8dp"
+                android:textSize="14sp"></EditText>
+
+            <Button
+                android:id="@+id/createButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="?attr/mx_btn_create"/>
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="?attr/mx_btn_save"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

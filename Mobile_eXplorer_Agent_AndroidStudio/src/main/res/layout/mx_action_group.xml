@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/actionGroup"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="?attr/mx_background_color"
+    android:orientation="horizontal">
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:background="?attr/mx_btn_arrow_toggle"
+        android:textOff=""
+        android:textOn=""/>
+
+    <LinearLayout
+        android:id="@+id/indicatorView"
+        android:layout_width="5dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="?attr/mx_highlight_color"
+        android:layout_alignTop="@+id/titleEditText"
+        android:layout_alignBottom="@+id/titleEditText"
+        android:orientation="horizontal"/>
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:layout_centerVertical="true"
+        android:minHeight="50dp"
+        android:layout_toLeftOf="@+id/indicatorView"
+        android:layout_toRightOf="@+id/toggleButton"
+        android:background="@android:color/transparent"
+        android:inputType="textNoSuggestions"
+        android:imeOptions="actionDone"
+        android:text="asdasdas asdadasda dasdas asdsadasd asdasdasdas asdasdasdas asdasdasdasdas"
+        android:textSize="14sp"/>
+
+    <View android:id="@+id/topLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/mx_line_color"/>
+
+</RelativeLayout>

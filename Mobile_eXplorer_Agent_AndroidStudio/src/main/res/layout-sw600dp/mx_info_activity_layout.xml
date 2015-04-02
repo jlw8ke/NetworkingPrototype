@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/rootView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/mx_dialog_shadow_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/mainView"
+        android:layout_width="@dimen/mx_large_activity_dialog_width"
+        android:layout_height="@dimen/mx_large_activity_dialog_height"
+        android:layout_centerInParent="true"
+        android:background="?attr/mx_dialog_background_shape">
+
+        <RelativeLayout
+            android:id="@+id/headerBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mx_header_bar_height"
+            android:background="?attr/mx_title_bar_color">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Informations"
+                android:textColor="?attr/mx_text_title_color"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/closeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="?attr/mx_btn_close"/>
+
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="?attr/mx_btn_logout"/>
+
+            <View
+                android:id="@+id/firstLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?attr/mx_line_color"/>
+
+            <View
+                android:id="@+id/secondLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="?attr/mx_line_color"/>
+        </RelativeLayout>
+
+        <ExpandableListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerBar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"/>
+    </RelativeLayout>
+</RelativeLayout>

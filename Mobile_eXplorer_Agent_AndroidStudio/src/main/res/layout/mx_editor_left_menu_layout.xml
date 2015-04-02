@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/mx_menu_background_color">
+
+    <com.qas.mexplorer.view.MXAnimatedExpandableListView
+        android:id="@+id/actionListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:divider="@null"
+        android:dividerHeight="0px"
+        android:groupIndicator="@null"
+        android:listSelector="@android:color/transparent"/>
+</RelativeLayout>

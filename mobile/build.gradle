@@ -2,7 +2,18 @@ repositories {
     maven { url = "https://oss.sonatype.org/content/repositories/snapshots" }
 }
 
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.uphyca.gradle:gradle-android-aspectj-plugin:0.9.5'
+    }
+}
+
 apply plugin: 'com.android.application'
+apply plugin: 'android-aspectj'
+
 android {
     compileSdkVersion project.ext.compileSdkVersion
     buildToolsVersion project.ext.buildToolsVersion
@@ -24,7 +35,20 @@ android {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
 
+    productFlavors {
+
+        base { }
+
+        qaTest {
+            renderscriptTargetApi project.ext.targetSdkVersion
+            renderscriptSupportModeEnabled true
+            dependencies {
+                compile project(':Mobile_eXplorer_Agent_AndroidStudio')
+            }
+
+        }
     }
 
     lintOptions {

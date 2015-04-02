@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/mx_background_color"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/tabBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/mx_title_bar_color"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.qas.mexplorer.view.MXTabButtonView
+                android:id="@+id/tabAuto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/v_divider"
+                android:layout_weight="1"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:background="?attr/mx_line_color"/>
+
+            <com.qas.mexplorer.view.MXTabButtonView
+                android:id="@+id/tabManual"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/v_divider"
+                android:layout_weight="1"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:background="?attr/mx_line_color"/>
+
+            <com.qas.mexplorer.view.MXTabButtonView
+                android:id="@+id/tabGame"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/v_divider"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/mx_line_color"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabBar">
+
+        <RelativeLayout
+            android:id="@+id/frame1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/frame2">
+
+            <com.qas.mexplorer.view.MXAnimatedExpandableListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/frame2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true">
+
+            <com.qas.mexplorer.libs.wheel.MXWheelView
+                android:id="@+id/wheelView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

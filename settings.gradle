@@ -1,1 +1,1 @@
-include ':mobile'
+include ':mobile', ':Mobile_eXplorer_Agent_AndroidStudio'

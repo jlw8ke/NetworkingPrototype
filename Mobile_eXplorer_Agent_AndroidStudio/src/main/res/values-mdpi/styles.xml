@@ -1,0 +1,11 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="mx_custom_gallery_btn">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="mx_custom_gallery_title_bar">
+        <item name="android:textColor">#d9f3ff</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+</resources>
