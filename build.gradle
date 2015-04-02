@@ -22,9 +22,9 @@ allprojects {
     }
 
     ext {
-        applicationId = "com.mobiquityinc.prototype.wwnetworking"
+        applicationId = "com.mobiquityinc.prototype.wwprototype"
         compileSdkVersion = 22
-        buildToolsVersion = "22.0.0"
+        buildToolsVersion = "22.0.1"
         minSdkVersion = 16
         targetSdkVersion = 22
 

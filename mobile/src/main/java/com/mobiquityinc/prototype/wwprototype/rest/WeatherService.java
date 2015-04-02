@@ -2,8 +2,6 @@ package com.mobiquityinc.prototype.wwprototype.rest;
 
 import com.mobiquityinc.prototype.wwprototype.rest.model.City;
 
-import java.util.List;
-
 import retrofit.http.GET;
 import retrofit.http.Query;
 

@@ -2,7 +2,6 @@ package com.mobiquityinc.prototype.wwprototype.rest;
 
 import android.content.Context;
 
-import com.mobiquityinc.prototype.wwprototype.AppModule;
 import com.mobiquityinc.prototype.wwprototype.R;
 import com.squareup.okhttp.OkHttpClient;
 

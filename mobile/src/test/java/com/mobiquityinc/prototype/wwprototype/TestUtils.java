@@ -2,9 +2,7 @@ package com.mobiquityinc.prototype.wwprototype;
 
 import android.view.View;
 
-import org.fest.assertions.api.android.view.ViewAssert;
-
-import static org.fest.assertions.api.ANDROID.*;
+import static org.fest.assertions.api.ANDROID.assertThat;
 
 
 public class TestUtils {

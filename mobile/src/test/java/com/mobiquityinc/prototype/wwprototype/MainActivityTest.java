@@ -9,12 +9,10 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
-import org.robolectric.RobolectricGradleTestRunner;
+import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
 import butterknife.ButterKnife;
-
-import static org.junit.Assert.*;
 
 @RunWith(CustomTestRunner.class)
 @Config(constants = BuildConfig.class)

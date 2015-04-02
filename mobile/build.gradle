@@ -17,7 +17,7 @@ android {
 
     buildTypes {
         debug {
-            applicationIdSuffix ".debug"
+            //applicationIdSuffix ".debug"
             testCoverageEnabled true
         }
         release {
@@ -68,7 +68,7 @@ dependencies {
     testCompile ('com.squareup:fest-android:1.0.8') {
         exclude group: 'com.android.support'
     }
-    testCompile('org.robolectric:robolectric:3.0-SNAPSHOT') {
+    testCompile('org.robolectric:robolectric:3.0-rc2') {
         exclude group: 'org.apache.httpcomponents', module: 'httpclient'
         exclude group: 'commons-logging', module: 'commons-logging'
     }
