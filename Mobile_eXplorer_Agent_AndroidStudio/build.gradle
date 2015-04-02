@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.uphyca.gradle:gradle-android-aspectj-plugin:0.9.5'
+        classpath 'com.uphyca.gradle:gradle-android-aspectj-plugin:0.9.12'
     }
 }
 
@@ -20,15 +20,11 @@ android {
 
         renderscriptSupportModeEnabled true
         renderscriptTargetApi project.ext.targetSdkVersion
-
-        //if your project use gradle build tool below 0.14.0. use this script to enable native script
-        //renderscriptSupportMode true
-        //renderscriptTargetApi 21
     }
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:22.0.0'
+    compile 'com.android.support:support-v4:21.+'
     compile 'com.googlecode.mp4parser:isoparser:1.0.2'
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
     compile fileTree(dir: 'libs', include: ['*.jar'])

@@ -2,17 +2,7 @@ repositories {
     maven { url = "https://oss.sonatype.org/content/repositories/snapshots" }
 }
 
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'com.uphyca.gradle:gradle-android-aspectj-plugin:0.9.5'
-    }
-}
-
 apply plugin: 'com.android.application'
-apply plugin: 'android-aspectj'
 
 android {
     compileSdkVersion project.ext.compileSdkVersion
@@ -39,13 +29,15 @@ android {
 
     productFlavors {
 
-        base { }
+        base {
+        }
 
         qaTest {
+            renderscriptNdkModeEnabled true
             renderscriptTargetApi project.ext.targetSdkVersion
             renderscriptSupportModeEnabled true
             dependencies {
-                compile project(':Mobile_eXplorer_Agent_AndroidStudio')
+                qaTestCompile project(':Mobile_eXplorer_Agent_AndroidStudio')
             }
 
         }
