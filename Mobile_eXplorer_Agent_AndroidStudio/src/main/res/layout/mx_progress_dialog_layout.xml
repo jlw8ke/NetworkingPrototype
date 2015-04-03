@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@id/rootView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/mx_dialog_shadow_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/mainView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="?attr/mx_shape_corner_background"
+        android:padding="10dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/progressBar1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Uploaded Screens: 40 of 100"
+            android:textColor="?attr/mx_text_normal_color"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

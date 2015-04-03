@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="mx_black_transparent_60">#99000000</color>
+    <color name="mx_black_transparent_80">#CC000000</color>
+    <color name="mx_black_transparent_90">#E6000000</color>
+    <color name="mx_white_transparent_60">#99FFFFFF</color>
+    <color name="mx_white_transparent_80">#CCFFFFFF</color>
+    <color name="mx_white_transparent_90">#E6FFFFFF</color>
+
+    <!--draw color-->
+    <color name="mx_draw_red">#fe0000</color>
+    <color name="mx_draw_yellow">#ffff01</color>
+    <color name="mx_draw_blue">#0100fe</color>
+    <color name="mx_draw_gray">#a4a4a4</color>
+
+    <!-- hotspot -->
+    <color name="dark_mx_hotspot_stroke">#4db1b1b1</color>
+    <color name="light_mx_hotspot_stroke">#4db1b1b1</color>
+    <color name="dark_mx_hotspot_fill">#000000</color>
+    <color name="light_mx_hotspot_fill">#FBFBFB</color>
+
+    <!--dialog-->
+    <color name="dark_mx_dialog_background_color">#2c2c2c</color>
+    <color name="light_mx_dialog_background_color">#ffffff</color>
+    <color name="dark_mx_dialog_shadow_color">#99ffffff</color>
+    <color name="light_mx_dialog_shadow_color">#99000000</color>
+
+    <!--common color-->
+    <color name="dark_mx_background_color">#2c2c2c</color>
+    <color name="light_mx_background_color">#ffffff</color>
+    <color name="dark_mx_title_bar_color">#1f1f1f</color>
+    <color name="light_mx_title_bar_color">#ffffff</color>
+    <color name="dark_mx_line_color">#484848</color>
+    <color name="light_mx_line_color">#d6d6d6</color>
+    <color name="dark_mx_menu_background_color">#2c2c2c</color>
+    <color name="light_mx_menu_background_color">#ffffff</color>
+    <color name="dark_mx_highlight_color">#ef4723</color>
+    <color name="light_mx_highlight_color">#ef4723</color>
+
+    <!--using for text color-->
+    <color name="dark_mx_text_normal_color">#ffffff</color>
+    <color name="light_mx_text_normal_color">#000000</color>
+    <color name="dark_mx_text_highlight_color">#ef4723</color>
+    <color name="light_mx_text_highlight_color">#ef4723</color>
+    <color name="dark_mx_text_disable_color">#6c6c6c</color>
+    <color name="light_mx_text_disable_color">#50000000</color>
+    <color name="dark_mx_text_title_color">#ffffff</color>
+    <color name="light_mx_text_title_color">#ef4723</color>
+    <color name="dark_mx_text_edit_color">#000000</color>
+    <color name="light_mx_text_edit_color">#000000</color>
+
+
+</resources>

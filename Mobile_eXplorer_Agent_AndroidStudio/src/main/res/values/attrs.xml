@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MXTheme">
+
+        <!-- hotspot -->
+        <attr name="mx_hotspot_background_color" format="color"/>
+        <attr name="mx_hotspot_stroke_color" format="color"/>
+
+        <!--dialog-->
+        <attr name="mx_dialog_background_color" format="color"/>
+        <attr name="mx_dialog_shadow_color" format="color"/>
+        <attr name="mx_dialog_background_shape" format="reference"/>
+
+        <!--common color-->
+        <attr name="mx_background_color" format="color"/>
+        <attr name="mx_title_bar_color" format="color"/>
+        <attr name="mx_menu_background_color" format="color"/>
+        <attr name="mx_line_color" format="color"/>
+        <attr name="mx_highlight_color" format="color"/>
+
+        <!--using for text color-->
+        <attr name="mx_text_normal_color" format="color"/>
+        <attr name="mx_text_disable_color" format="color"/>
+        <attr name="mx_text_title_color" format="color"/>
+        <attr name="mx_text_edit_color" format="color"/>
+        <attr name="mx_text_highlight_color" format="color"/>
+
+        <!--button-->
+        <attr name="mx_btn_add_new" format="reference"/>
+        <attr name="mx_btn_arrow_toggle" format="reference"/>
+        <attr name="mx_btn_auto" format="reference"/>
+        <attr name="mx_btn_back" format="reference"/>
+        <attr name="mx_btn_camera" format="reference"/>
+        <attr name="mx_btn_cancel" format="reference"/>
+        <attr name="mx_btn_capture" format="reference"/>
+        <attr name="mx_btn_circle" format="reference"/>
+        <attr name="mx_btn_circle_clean" format="reference"/>
+        <attr name="mx_btn_close" format="reference"/>
+        <attr name="mx_btn_complete" format="reference"/>
+        <attr name="mx_btn_create" format="reference"/>
+        <attr name="mx_btn_create_new" format="reference"/>
+        <attr name="mx_btn_delete_view_animation" format="reference"/>
+        <attr name="mx_btn_draw_bar_arrow" format="reference"/>
+        <attr name="mx_btn_draw_bar_blur" format="reference"/>
+        <attr name="mx_btn_draw_bar_ellipse" format="reference"/>
+        <attr name="mx_btn_draw_bar_note" format="reference"/>
+        <attr name="mx_btn_draw_bar_pencil" format="reference"/>
+        <attr name="mx_btn_draw_bar_rectangle" format="reference"/>
+        <attr name="mx_btn_draw_bar_select" format="reference"/>
+        <attr name="mx_btn_draw_bar_text" format="reference"/>
+        <attr name="mx_btn_edit" format="reference"/>
+        <attr name="mx_btn_game" format="reference"/>
+        <attr name="mx_btn_go" format="reference"/>
+        <attr name="mx_btn_guest" format="reference"/>
+        <attr name="mx_btn_hotspot_complete" format="reference"/>
+        <attr name="mx_btn_info" format="reference"/>
+        <attr name="mx_btn_left_menu" format="reference"/>
+        <attr name="mx_btn_list_divider" format="reference"/>
+        <attr name="mx_btn_logout" format="reference"/>
+        <attr name="mx_btn_manual" format="reference"/>
+        <attr name="mx_btn_more" format="reference"/>
+        <attr name="mx_btn_nav_back" format="reference"/>
+        <attr name="mx_btn_next" format="reference"/>
+        <attr name="mx_btn_pause" format="reference"/>
+        <attr name="mx_btn_photo" format="reference"/>
+        <attr name="mx_btn_planned_project" format="reference"/>
+        <attr name="mx_btn_qtest" format="reference"/>
+        <attr name="mx_btn_redo" format="reference"/>
+        <attr name="mx_btn_remove" format="reference"/>
+        <attr name="mx_btn_record_timer" format="reference"/>
+        <attr name="mx_btn_record_timer_animation" format="reference"/>
+        <attr name="mx_btn_resume" format="reference"/>
+        <attr name="mx_btn_right_menu" format="reference"/>
+        <attr name="mx_btn_save" format="reference"/>
+        <attr name="mx_btn_start_playing" format="reference"/>
+        <attr name="mx_btn_start_record" format="reference"/>
+        <attr name="mx_btn_stop" format="reference"/>
+        <attr name="mx_btn_stop_playing" format="reference"/>
+        <attr name="mx_btn_stop_record" format="reference"/>
+        <attr name="mx_btn_stt_local" format="reference"/>
+        <attr name="mx_btn_stt_modify" format="reference"/>
+        <attr name="mx_btn_timeline" format="reference"/>
+
+        <attr name="mx_btn_toggle_arrow" format="reference"/>
+        <attr name="mx_btn_toggle_blur" format="reference"/>
+        <attr name="mx_btn_toggle_ellipse" format="reference"/>
+        <attr name="mx_btn_toggle_note" format="reference"/>
+        <attr name="mx_btn_toggle_pencil" format="reference"/>
+        <attr name="mx_btn_toggle_rectangle" format="reference"/>
+        <attr name="mx_btn_toggle_select" format="reference"/>
+        <attr name="mx_btn_toggle_text" format="reference"/>
+        <attr name="mx_btn_toggle_on_off" format="reference"/>
+        <attr name="mx_btn_undo" format="reference"/>
+        <attr name="mx_shape_corner_background" format="reference"/>
+        <attr name="mx_shape_corner_title_bar" format="reference"/>
+        <attr name="mx_shape_large_pie_background" format="reference"/>
+        <attr name="mx_shape_round_edit_text" format="reference"/>
+        <attr name="mx_shape_small_pie_background" format="reference"/>
+        <attr name="mx_shape_screen_count_background" format="reference"/>
+
+    </declare-styleable>
+
+    <!--drag sort listview-->
+    <declare-styleable name="MXDragSortListView">
+        <attr name="mx_collapsed_height" format="dimension"/>
+        <attr name="mx_drag_scroll_start" format="float"/>
+        <attr name="mx_max_drag_scroll_speed" format="float"/>
+        <attr name="mx_float_background_color" format="color"/>
+        <attr name="mx_remove_mode">
+            <enum name="mx_clickRemove" value="0"/>
+            <enum name="mx_flingRemove" value="1"/>
+        </attr>
+        <attr name="mx_track_drag_sort" format="boolean"/>
+        <attr name="mx_float_alpha" format="float"/>
+        <attr name="mx_slide_shuffle_speed" format="float"/>
+        <attr name="mx_remove_animation_duration" format="integer"/>
+        <attr name="mx_drop_animation_duration" format="integer"/>
+        <attr name="mx_drag_enabled" format="boolean"/>
+        <attr name="mx_sort_enabled" format="boolean"/>
+        <attr name="mx_remove_enabled" format="boolean"/>
+        <attr name="mx_drag_start_mode">
+            <enum name="mx_onDown" value="0"/>
+            <enum name="mx_onMove" value="1"/>
+            <enum name="mx_onLongPress" value="2"/>
+        </attr>
+        <attr name="mx_drag_handle_id" format="integer"/>
+        <attr name="mx_fling_handle_id" format="integer"/>
+        <attr name="mx_click_remove_id" format="integer"/>
+        <attr name="mx_use_default_controller" format="boolean"/>
+    </declare-styleable>
+
+</resources>

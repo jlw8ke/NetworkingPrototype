@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+    <TextView
+        android:id="@+id/actionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/actionDescription"
+        android:layout_marginLeft="10dp"
+        android:focusable="false"
+        android:padding="10dp"
+        android:focusableInTouchMode="false"
+        android:textSize="14sp"
+        android:text="aaa"/>
+
+    <View
+        android:id="@+id/indicatorView"
+        android:layout_width="5dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/actionDescription"
+        android:layout_alignBottom="@+id/actionDescription"
+        android:background="?attr/mx_highlight_color"/>
+
+
+    <TextView
+        android:id="@+id/actionDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="left|top"
+        android:layout_toLeftOf="@+id/indicatorView"
+        android:layout_toRightOf="@+id/actionNumber"
+        android:padding="10dp"
+        android:focusable="false"
+        android:maxLines="5"
+        android:focusableInTouchMode="false"
+        android:textSize="14sp"
+        android:text="asdasd dasdasdasdas asdasdas as dasdas  asdasdas sdasdas asdasdas asdasda"/>
+
+    <View android:id="@+id/bottomLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="?attr/mx_line_color"/>
+
+</RelativeLayout>

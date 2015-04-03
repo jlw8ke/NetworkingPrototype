@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mx_draw_bar_height"
+                android:background="?attr/mx_title_bar_color"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ToggleButton
+                android:id="@+id/bt_select"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/mx_btn_draw_bar_select"
+                android:textOff=""
+                android:textOn=""/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ToggleButton
+                android:id="@+id/bt_pencil"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/mx_btn_draw_bar_pencil"
+                android:textOff=""
+                android:textOn=""/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ToggleButton
+                android:id="@+id/bt_arrow"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/mx_btn_draw_bar_arrow"
+                android:textOff=""
+                android:textOn=""/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ToggleButton
+                android:id="@+id/bt_rectangle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/mx_btn_draw_bar_rectangle"
+                android:textOff=""
+                android:textOn=""/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ToggleButton
+                android:id="@+id/bt_ellipse"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/mx_btn_draw_bar_ellipse"
+                android:textOff=""
+                android:textOn=""/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ToggleButton
+                android:id="@+id/bt_blur"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/mx_btn_draw_bar_blur"
+                android:textOff=""
+                android:textOn=""/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ToggleButton
+                android:id="@+id/bt_text"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/mx_btn_draw_bar_text"
+                android:textOff=""
+                android:textOn=""/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ToggleButton
+                android:id="@+id/bt_note"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/mx_btn_draw_bar_note"
+                android:textOff=""
+                android:textOn=""/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/mx_line_color"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/mx_line_color"/>
+</RelativeLayout>

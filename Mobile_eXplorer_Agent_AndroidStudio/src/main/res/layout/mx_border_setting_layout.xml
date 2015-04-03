@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/backgroundView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?attr/mx_dialog_shadow_color">
+
+    <LinearLayout
+        android:id="@+id/dialogView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="?attr/mx_shape_corner_background"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal">
+
+            <com.qas.mexplorer.view.MXCircleLineButton
+                android:id="@+id/button1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="?attr/mx_btn_circle"/>
+
+            <com.qas.mexplorer.view.MXCircleLineButton
+                android:id="@+id/button2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="?attr/mx_btn_circle"/>
+
+            <com.qas.mexplorer.view.MXCircleLineButton
+                android:id="@+id/button3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="?attr/mx_btn_circle"/>
+
+            <com.qas.mexplorer.view.MXCircleLineButton
+                android:id="@+id/button4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="?attr/mx_btn_circle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal">
+
+            <com.qas.mexplorer.view.MXCircleLineButton
+                android:id="@+id/button5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="?attr/mx_btn_circle"/>
+
+            <com.qas.mexplorer.view.MXCircleLineButton
+                android:id="@+id/button6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="?attr/mx_btn_circle"/>
+
+            <com.qas.mexplorer.view.MXCircleLineButton
+                android:id="@+id/button7"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="?attr/mx_btn_circle"/>
+
+            <com.qas.mexplorer.view.MXCircleLineButton
+                android:id="@+id/button8"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="?attr/mx_btn_circle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal">
+
+            <com.qas.mexplorer.view.MXCircleLineButton
+                android:id="@+id/button9"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="?attr/mx_btn_circle"/>
+
+            <com.qas.mexplorer.view.MXCircleLineButton
+                android:id="@+id/button10"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="?attr/mx_btn_circle"/>
+
+            <com.qas.mexplorer.view.MXCircleLineButton
+                android:id="@+id/button11"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="?attr/mx_btn_circle"/>
+
+            <com.qas.mexplorer.view.MXCircleLineButton
+                android:id="@+id/button12"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="?attr/mx_btn_circle"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal">
+
+            <com.qas.mexplorer.view.MXCircleLineButton
+                android:id="@+id/button13"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="?attr/mx_btn_circle"/>
+
+            <com.qas.mexplorer.view.MXCircleLineButton
+                android:id="@+id/button14"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="?attr/mx_btn_circle"/>
+
+            <com.qas.mexplorer.view.MXCircleLineButton
+                android:id="@+id/button15"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="?attr/mx_btn_circle"/>
+
+            <com.qas.mexplorer.view.MXCircleLineButton
+                android:id="@+id/button16"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="?attr/mx_btn_circle"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

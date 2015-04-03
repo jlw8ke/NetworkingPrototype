@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/mx_background_color"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/contentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/tabBar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <com.qas.mexplorer.view.MXTabButtonView
+                android:id="@+id/tabPlanned"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/v_divider"/>
+
+            <com.qas.mexplorer.view.MXTabButtonView
+                android:id="@+id/tabCreateNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/v_divider"/>
+
+            <View
+                android:id="@+id/v_divider"
+                android:layout_width="1dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:background="?attr/mx_line_color"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="?attr/mx_line_color"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/createNewView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tabBar"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="70dp">
+
+                <EditText
+                    android:id="@+id/titleEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="?attr/mx_shape_round_edit_text"
+                    android:hint="@string/str_new_session_title_hint"
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapSentences"
+                    android:padding="8dp"
+                    android:textColor="?attr/mx_text_edit_color"
+                    android:textSize="14sp"/>
+
+                <EditText
+                    android:id="@+id/descriptionEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="2dp"
+                    android:background="?attr/mx_shape_round_edit_text"
+                    android:hint="@string/str_new_session_description_hint"
+                    android:inputType="textMultiLine"
+                    android:padding="8dp"
+                    android:textColor="?attr/mx_text_edit_color"
+                    android:textSize="14sp"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/createButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="?attr/mx_btn_create"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/plannedSessionView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tabBar">
+
+            <ListView
+                android:id="@+id/plannedSessionList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/transparent"/>
+
+            <ProgressBar
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

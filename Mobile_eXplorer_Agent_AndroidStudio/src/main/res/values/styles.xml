@@ -1,0 +1,273 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+
+    <style name="MXTheme" parent="android:Theme.Translucent.NoTitleBar">
+
+    </style>
+
+    <style name="MXTheme.Dark">
+        <item name="android:dialogTheme">@style/MXDialog.Dark</item>
+
+        <!--Hotspot style-->
+        <item name="attr/mx_hotspot_background_color">@color/dark_mx_hotspot_fill</item>
+        <item name="attr/mx_hotspot_stroke_color">@color/dark_mx_hotspot_stroke</item>
+
+        <!-- dialog -->
+        <item name="attr/mx_dialog_background_color">@color/dark_mx_dialog_background_color</item>
+        <item name="attr/mx_dialog_shadow_color">@color/dark_mx_dialog_shadow_color</item>
+        <item name="attr/mx_dialog_background_shape">@drawable/dark_mx_shape_corner_background</item>
+
+        <!--common-->
+        <item name="attr/mx_background_color">@color/dark_mx_background_color</item>
+        <item name="attr/mx_title_bar_color">@color/dark_mx_title_bar_color</item>
+        <item name="attr/mx_menu_background_color">@color/dark_mx_menu_background_color</item>
+        <item name="attr/mx_highlight_color">@color/dark_mx_highlight_color</item>
+        <item name="attr/mx_line_color">@color/dark_mx_line_color</item>
+
+        <!--using for text color-->
+        <item name="attr/mx_text_normal_color">@color/dark_mx_text_normal_color</item>
+        <item name="attr/mx_text_disable_color">@color/dark_mx_text_disable_color</item>
+        <item name="attr/mx_text_title_color">@color/dark_mx_text_title_color</item>
+        <item name="attr/mx_text_edit_color">@color/dark_mx_text_edit_color</item>
+        <item name="attr/mx_text_highlight_color">@color/dark_mx_text_highlight_color</item>
+
+        <!--button-->
+        <item name="attr/mx_btn_add_new">@drawable/dark_mx_btn_add_new</item>
+        <item name="attr/mx_btn_arrow_toggle">@drawable/dark_mx_btn_arrow_toggle</item>
+        <item name="attr/mx_btn_auto">@drawable/dark_mx_btn_auto</item>
+        <item name="attr/mx_btn_back">@drawable/dark_mx_btn_back</item>
+        <item name="attr/mx_btn_camera">@drawable/dark_mx_btn_camera</item>
+        <item name="attr/mx_btn_cancel">@drawable/dark_mx_btn_cancel</item>
+        <item name="attr/mx_btn_capture">@drawable/dark_mx_btn_capture</item>
+        <item name="attr/mx_btn_circle">@drawable/dark_mx_btn_circle</item>
+        <item name="attr/mx_btn_circle_clean">@drawable/dark_mx_btn_circle_clean</item>
+        <item name="attr/mx_btn_close">@drawable/dark_mx_btn_close</item>
+        <item name="attr/mx_btn_complete">@drawable/dark_mx_btn_complete</item>
+        <item name="attr/mx_btn_create">@drawable/dark_mx_btn_create</item>
+        <item name="attr/mx_btn_create_new">@drawable/dark_mx_btn_create_new</item>
+        <item name="attr/mx_btn_delete_view_animation">@drawable/dark_mx_btn_delete_view_animation</item>
+        <item name="attr/mx_btn_draw_bar_arrow">@drawable/dark_mx_btn_draw_bar_arrow</item>
+        <item name="attr/mx_btn_draw_bar_blur">@drawable/dark_mx_btn_draw_bar_blur</item>
+        <item name="attr/mx_btn_draw_bar_ellipse">@drawable/dark_mx_btn_draw_bar_ellipse</item>
+        <item name="attr/mx_btn_draw_bar_note">@drawable/dark_mx_btn_draw_bar_note</item>
+        <item name="attr/mx_btn_draw_bar_pencil">@drawable/dark_mx_btn_draw_bar_pencil</item>
+        <item name="attr/mx_btn_draw_bar_rectangle">@drawable/dark_mx_btn_draw_bar_rectangle</item>
+        <item name="attr/mx_btn_draw_bar_select">@drawable/dark_mx_btn_draw_bar_select</item>
+        <item name="attr/mx_btn_draw_bar_text">@drawable/dark_mx_btn_draw_bar_text</item>
+        <item name="attr/mx_btn_edit">@drawable/dark_mx_btn_edit</item>
+        <item name="attr/mx_btn_game">@drawable/dark_mx_btn_game</item>
+        <item name="attr/mx_btn_go">@drawable/dark_mx_btn_go</item>
+        <item name="attr/mx_btn_guest">@drawable/dark_mx_btn_guest</item>
+        <item name="attr/mx_btn_hotspot_complete">@drawable/dark_mx_btn_hotspot_complete</item>
+        <item name="attr/mx_btn_info">@drawable/dark_mx_btn_info</item>
+        <item name="attr/mx_btn_left_menu">@drawable/dark_mx_btn_left_menu</item>
+        <item name="attr/mx_btn_list_divider">@drawable/dark_mx_btn_list_divider</item>
+        <item name="attr/mx_btn_logout">@drawable/dark_mx_btn_logout</item>
+        <item name="attr/mx_btn_manual">@drawable/dark_mx_btn_manual</item>
+        <item name="attr/mx_btn_more">@drawable/dark_mx_btn_more</item>
+        <item name="attr/mx_btn_nav_back">@drawable/dark_mx_btn_nav_back</item>
+        <item name="attr/mx_btn_next">@drawable/dark_mx_btn_next</item>
+        <item name="attr/mx_btn_pause">@drawable/dark_mx_btn_pause</item>
+        <item name="attr/mx_btn_photo">@drawable/dark_mx_btn_photo</item>
+        <item name="attr/mx_btn_planned_project">@drawable/dark_mx_btn_planned_project</item>
+        <item name="attr/mx_btn_qtest">@drawable/dark_mx_btn_qtest</item>
+        <item name="attr/mx_btn_redo">@drawable/dark_mx_btn_redo</item>
+        <item name="attr/mx_btn_remove">@drawable/dark_mx_btn_remove</item>
+        <item name="attr/mx_btn_resume">@drawable/dark_mx_btn_resume</item>
+        <item name="attr/mx_btn_record_timer">@drawable/dark_btn_record_timer</item>
+        <item name="attr/mx_btn_record_timer_animation">@drawable/dark_btn_record_timer_animation</item>
+        <item name="attr/mx_btn_right_menu">@drawable/dark_mx_btn_right_menu</item>
+        <item name="attr/mx_btn_save">@drawable/dark_mx_btn_save</item>
+        <item name="attr/mx_btn_start_playing">@drawable/dark_mx_btn_start_playing</item>
+        <item name="attr/mx_btn_start_record">@drawable/dark_mx_btn_start_record</item>
+        <item name="attr/mx_btn_stop">@drawable/dark_mx_btn_stop</item>
+        <item name="attr/mx_btn_stop_playing">@drawable/dark_mx_btn_stop_playing</item>
+        <item name="attr/mx_btn_stop_record">@drawable/dark_mx_btn_stop_record</item>
+        <item name="attr/mx_btn_stt_local">@drawable/dark_mx_btn_stt_local</item>
+        <item name="attr/mx_btn_stt_modify">@drawable/dark_mx_btn_stt_modify</item>
+        <item name="attr/mx_btn_timeline">@drawable/dark_mx_btn_timeline</item>
+
+        <item name="attr/mx_btn_toggle_arrow">@drawable/dark_mx_btn_toggle_arrow</item>
+        <item name="attr/mx_btn_toggle_ellipse">@drawable/dark_mx_btn_toggle_ellipse</item>
+        <item name="attr/mx_btn_toggle_note">@drawable/dark_mx_btn_toggle_note</item>
+        <item name="attr/mx_btn_toggle_pencil">@drawable/dark_mx_btn_toggle_pencil</item>
+        <item name="attr/mx_btn_toggle_rectangle">@drawable/dark_mx_btn_toggle_rectangle</item>
+        <item name="attr/mx_btn_toggle_select">@drawable/dark_mx_btn_toggle_select</item>
+        <item name="attr/mx_btn_toggle_text">@drawable/dark_mx_btn_toggle_text</item>
+        <item name="attr/mx_btn_toggle_blur">@drawable/dark_mx_btn_toggle_blur</item>
+        <item name="attr/mx_btn_toggle_on_off">@drawable/dark_mx_btn_toggle_on_off</item>
+        <item name="attr/mx_btn_undo">@drawable/dark_mx_btn_undo</item>
+        <item name="attr/mx_shape_corner_background">@drawable/dark_mx_shape_corner_background</item>
+        <item name="attr/mx_shape_corner_title_bar">@drawable/dark_mx_shape_corner_title_bar</item>
+        <item name="attr/mx_shape_large_pie_background">@drawable/dark_mx_shape_large_pie_background</item>
+        <item name="attr/mx_shape_round_edit_text">@drawable/dark_mx_shape_round_edit_text</item>
+        <item name="attr/mx_shape_small_pie_background">@drawable/dark_mx_shape_small_pie_background</item>
+        <item name="attr/mx_shape_screen_count_background">@drawable/dark_mx_shape_screen_count_background</item>
+    </style>
+
+    <style name="MXTheme.Dark.Fullscreen">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="MXTheme.Light">
+        <item name="android:dialogTheme">@style/MXDialog.Light</item>
+
+        <!--Hotspot style-->
+        <item name="attr/mx_hotspot_background_color">@color/light_mx_hotspot_fill</item>
+        <item name="attr/mx_hotspot_stroke_color">@color/light_mx_hotspot_stroke</item>
+
+        <!-- dialog -->
+        <item name="attr/mx_dialog_background_color">@color/light_mx_dialog_background_color</item>
+        <item name="attr/mx_dialog_shadow_color">@color/light_mx_dialog_shadow_color</item>
+        <item name="attr/mx_dialog_background_shape">@drawable/light_mx_shape_corner_background</item>
+
+        <!--common-->
+        <item name="attr/mx_background_color">@color/light_mx_background_color</item>
+        <item name="attr/mx_title_bar_color">@color/light_mx_title_bar_color</item>
+        <item name="attr/mx_menu_background_color">@color/light_mx_menu_background_color</item>
+        <item name="attr/mx_highlight_color">@color/light_mx_highlight_color</item>
+        <item name="attr/mx_line_color">@color/light_mx_line_color</item>
+
+        <!--using for text color-->
+        <item name="attr/mx_text_normal_color">@color/light_mx_text_normal_color</item>
+        <item name="attr/mx_text_disable_color">@color/light_mx_text_disable_color</item>
+        <item name="attr/mx_text_title_color">@color/light_mx_text_title_color</item>
+        <item name="attr/mx_text_edit_color">@color/light_mx_text_edit_color</item>
+        <item name="attr/mx_text_highlight_color">@color/light_mx_text_highlight_color</item>
+
+        <!--button-->
+        <item name="attr/mx_btn_add_new">@drawable/light_mx_btn_add_new</item>
+        <item name="attr/mx_btn_arrow_toggle">@drawable/light_mx_btn_arrow_toggle</item>
+        <item name="attr/mx_btn_auto">@drawable/light_mx_btn_auto</item>
+        <item name="attr/mx_btn_back">@drawable/light_mx_btn_back</item>
+        <item name="attr/mx_btn_camera">@drawable/light_mx_btn_camera</item>
+        <item name="attr/mx_btn_cancel">@drawable/light_mx_btn_cancel</item>
+        <item name="attr/mx_btn_capture">@drawable/light_mx_btn_capture</item>
+        <item name="attr/mx_btn_circle">@drawable/light_mx_btn_circle</item>
+        <item name="attr/mx_btn_circle_clean">@drawable/light_mx_btn_circle_clean</item>
+        <item name="attr/mx_btn_close">@drawable/light_mx_btn_close</item>
+        <item name="attr/mx_btn_complete">@drawable/light_mx_btn_complete</item>
+        <item name="attr/mx_btn_create">@drawable/light_mx_btn_create</item>
+        <item name="attr/mx_btn_create_new">@drawable/light_mx_btn_create_new</item>
+        <item name="attr/mx_btn_delete_view_animation">@drawable/light_mx_btn_delete_view_animation</item>
+        <item name="attr/mx_btn_draw_bar_arrow">@drawable/light_mx_btn_draw_bar_arrow</item>
+        <item name="attr/mx_btn_draw_bar_blur">@drawable/light_mx_btn_draw_bar_blur</item>
+        <item name="attr/mx_btn_draw_bar_ellipse">@drawable/light_mx_btn_draw_bar_ellipse</item>
+        <item name="attr/mx_btn_draw_bar_note">@drawable/light_mx_btn_draw_bar_note</item>
+        <item name="attr/mx_btn_draw_bar_pencil">@drawable/light_mx_btn_draw_bar_pencil</item>
+        <item name="attr/mx_btn_draw_bar_rectangle">@drawable/light_mx_btn_draw_bar_rectangle</item>
+        <item name="attr/mx_btn_draw_bar_select">@drawable/light_mx_btn_draw_bar_select</item>
+        <item name="attr/mx_btn_draw_bar_text">@drawable/light_mx_btn_draw_bar_text</item>
+        <item name="attr/mx_btn_edit">@drawable/light_mx_btn_edit</item>
+        <item name="attr/mx_btn_game">@drawable/light_mx_btn_game</item>
+        <item name="attr/mx_btn_go">@drawable/light_mx_btn_go</item>
+        <item name="attr/mx_btn_guest">@drawable/light_mx_btn_guest</item>
+        <item name="attr/mx_btn_hotspot_complete">@drawable/light_mx_btn_hotspot_complete</item>
+        <item name="attr/mx_btn_info">@drawable/light_mx_btn_info</item>
+        <item name="attr/mx_btn_left_menu">@drawable/light_mx_btn_left_menu</item>
+        <item name="attr/mx_btn_list_divider">@drawable/light_mx_btn_list_divider</item>
+        <item name="attr/mx_btn_logout">@drawable/light_mx_btn_logout</item>
+        <item name="attr/mx_btn_manual">@drawable/light_mx_btn_manual</item>
+        <item name="attr/mx_btn_more">@drawable/light_mx_btn_more</item>
+        <item name="attr/mx_btn_nav_back">@drawable/light_mx_btn_nav_back</item>
+        <item name="attr/mx_btn_next">@drawable/light_mx_btn_next</item>
+        <item name="attr/mx_btn_pause">@drawable/light_mx_btn_pause</item>
+        <item name="attr/mx_btn_photo">@drawable/light_mx_btn_photo</item>
+        <item name="attr/mx_btn_planned_project">@drawable/light_mx_btn_planned_project</item>
+        <item name="attr/mx_btn_qtest">@drawable/light_mx_btn_qtest</item>
+        <item name="attr/mx_btn_redo">@drawable/light_mx_btn_redo</item>
+        <item name="attr/mx_btn_remove">@drawable/light_mx_btn_remove</item>
+        <item name="attr/mx_btn_resume">@drawable/light_mx_btn_resume</item>
+        <item name="attr/mx_btn_record_timer">@drawable/light_btn_record_timer</item>
+        <item name="attr/mx_btn_record_timer_animation">@drawable/light_btn_record_timer_animation</item>
+        <item name="attr/mx_btn_right_menu">@drawable/light_mx_btn_right_menu</item>
+        <item name="attr/mx_btn_save">@drawable/light_mx_btn_save</item>
+        <item name="attr/mx_btn_start_playing">@drawable/light_mx_btn_start_playing</item>
+        <item name="attr/mx_btn_start_record">@drawable/light_mx_btn_start_record</item>
+        <item name="attr/mx_btn_stop">@drawable/light_mx_btn_stop</item>
+        <item name="attr/mx_btn_stop_playing">@drawable/light_mx_btn_stop_playing</item>
+        <item name="attr/mx_btn_stop_record">@drawable/light_mx_btn_stop_record</item>
+        <item name="attr/mx_btn_stt_local">@drawable/light_mx_btn_stt_local</item>
+        <item name="attr/mx_btn_stt_modify">@drawable/light_mx_btn_stt_modify</item>
+        <item name="attr/mx_btn_timeline">@drawable/light_mx_btn_timeline</item>
+
+        <item name="attr/mx_btn_toggle_arrow">@drawable/light_mx_btn_toggle_arrow</item>
+        <item name="attr/mx_btn_toggle_ellipse">@drawable/light_mx_btn_toggle_ellipse</item>
+        <item name="attr/mx_btn_toggle_note">@drawable/light_mx_btn_toggle_note</item>
+        <item name="attr/mx_btn_toggle_pencil">@drawable/light_mx_btn_toggle_pencil</item>
+        <item name="attr/mx_btn_toggle_rectangle">@drawable/light_mx_btn_toggle_rectangle</item>
+        <item name="attr/mx_btn_toggle_select">@drawable/light_mx_btn_toggle_select</item>
+        <item name="attr/mx_btn_toggle_text">@drawable/light_mx_btn_toggle_text</item>
+        <item name="attr/mx_btn_toggle_blur">@drawable/light_mx_btn_toggle_blur</item>
+        <item name="attr/mx_btn_toggle_on_off">@drawable/dark_mx_btn_toggle_on_off</item>
+        <item name="attr/mx_btn_undo">@drawable/light_mx_btn_undo</item>
+        <item name="attr/mx_shape_corner_background">@drawable/light_mx_shape_corner_background</item>
+        <item name="attr/mx_shape_corner_title_bar">@drawable/light_mx_shape_corner_title_bar</item>
+        <item name="attr/mx_shape_large_pie_background">@drawable/light_mx_shape_large_pie_background</item>
+        <item name="attr/mx_shape_round_edit_text">@drawable/light_mx_shape_round_edit_text</item>
+        <item name="attr/mx_shape_small_pie_background">@drawable/light_mx_shape_small_pie_background</item>
+        <item name="attr/mx_shape_screen_count_background">@drawable/light_mx_shape_screen_count_background</item>
+    </style>
+
+    <style name="MXTheme.Light.Fullscreen">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="MXDialog" parent="android:Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:background">@android:color/transparent</item>-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="MXDialog.Dark">
+        <item name="android:windowBackground">@color/mx_white_transparent_60</item>
+    </style>
+
+    <style name="MXDialog.Light">
+        <item name="android:windowBackground">@color/mx_black_transparent_60</item>
+    </style>
+
+    <style name="MXDialog.Dark.Fullscreen">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="MXDialog.Light.Fullscreen">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!--
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="mySeekBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/mx_seekbar_progress</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_horizontal</item>
+        <item name="android:minHeight">10dip</item>
+        <item name="android:maxHeight">10dip</item>
+        <item name="android:thumbOffset">0dp</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="progressDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    -->
+
+</resources>
