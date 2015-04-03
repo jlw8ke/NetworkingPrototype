@@ -1,9 +1,9 @@
-package com.mobiquityinc.prototype.wwprototype.ui;
+package com.mobiquityinc.nwprototype.ui;
 
 import android.app.Activity;
 import android.content.Context;
 
-import com.mobiquityinc.prototype.wwprototype.AppModule;
+import com.mobiquityinc.nwprototype.AppModule;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

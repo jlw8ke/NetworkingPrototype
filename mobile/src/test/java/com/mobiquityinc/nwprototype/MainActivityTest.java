@@ -1,15 +1,14 @@
-package com.mobiquityinc.prototype.wwprototype;
+package com.mobiquityinc.nwprototype;
 
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.mobiquityinc.prototype.wwprototype.ui.MainActivity;
+import com.mobiquityinc.nwprototype.ui.MainActivity;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
-import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
 import butterknife.ButterKnife;

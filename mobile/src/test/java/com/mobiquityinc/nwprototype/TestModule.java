@@ -1,6 +1,6 @@
-package com.mobiquityinc.prototype.wwprototype;
+package com.mobiquityinc.nwprototype;
 
-import com.mobiquityinc.prototype.wwprototype.ui.MainActivity;
+import com.mobiquityinc.nwprototype.ui.MainActivity;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

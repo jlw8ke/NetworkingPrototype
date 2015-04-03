@@ -1,8 +1,8 @@
-package com.mobiquityinc.prototype.wwprototype;
+package com.mobiquityinc.nwprototype;
 
 import android.content.Context;
 
-import com.mobiquityinc.prototype.wwprototype.rest.RestModule;
+import com.mobiquityinc.nwprototype.rest.RestModule;
 
 import javax.inject.Singleton;
 

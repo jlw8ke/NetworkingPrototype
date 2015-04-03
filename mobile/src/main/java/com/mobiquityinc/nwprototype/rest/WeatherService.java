@@ -1,6 +1,7 @@
-package com.mobiquityinc.prototype.wwprototype.rest;
+package com.mobiquityinc.nwprototype.rest;
 
-import com.mobiquityinc.prototype.wwprototype.rest.model.City;
+
+import com.mobiquityinc.nwprototype.rest.model.City;
 
 import retrofit.http.GET;
 import retrofit.http.Query;

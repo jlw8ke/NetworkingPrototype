@@ -1,5 +1,5 @@
 
-package com.mobiquityinc.prototype.wwprototype.rest.model;
+package com.mobiquityinc.nwprototype.rest.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

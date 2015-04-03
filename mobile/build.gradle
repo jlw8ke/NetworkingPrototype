@@ -33,6 +33,7 @@ android {
         }
 
         qaTest {
+            //apply plugin: 'android-aspectj'
             renderscriptNdkModeEnabled true
             renderscriptTargetApi project.ext.targetSdkVersion
             renderscriptSupportModeEnabled true

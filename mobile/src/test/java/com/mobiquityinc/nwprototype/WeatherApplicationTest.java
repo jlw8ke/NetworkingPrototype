@@ -1,4 +1,4 @@
-package com.mobiquityinc.prototype.wwprototype;
+package com.mobiquityinc.nwprototype;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

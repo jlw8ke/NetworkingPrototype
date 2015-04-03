@@ -1,13 +1,13 @@
-package com.mobiquityinc.prototype.wwprototype.ui;
+package com.mobiquityinc.nwprototype.ui;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.mobiquityinc.prototype.wwprototype.R;
-import com.mobiquityinc.prototype.wwprototype.rest.WeatherService;
-import com.mobiquityinc.prototype.wwprototype.rest.model.City;
+import com.mobiquityinc.nwprototype.R;
+import com.mobiquityinc.nwprototype.rest.WeatherService;
+import com.mobiquityinc.nwprototype.rest.model.City;
 
 import javax.inject.Inject;
 

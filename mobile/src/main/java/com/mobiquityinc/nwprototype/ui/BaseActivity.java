@@ -1,10 +1,11 @@
-package com.mobiquityinc.prototype.wwprototype.ui;
+package com.mobiquityinc.nwprototype.ui;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 
-import com.mobiquityinc.prototype.wwprototype.Injectable;
-import com.mobiquityinc.prototype.wwprototype.Injector;
+
+import com.mobiquityinc.nwprototype.Injectable;
+import com.mobiquityinc.nwprototype.Injector;
 
 import butterknife.ButterKnife;
 import dagger.ObjectGraph;
@@ -12,7 +13,7 @@ import dagger.ObjectGraph;
 /**
  * Created by jwashington on 3/26/15.
  */
-public abstract class BaseActivity extends ActionBarActivity implements Injectable{
+public abstract class BaseActivity extends ActionBarActivity implements Injectable {
 
     private ObjectGraph scopedGraph;
 

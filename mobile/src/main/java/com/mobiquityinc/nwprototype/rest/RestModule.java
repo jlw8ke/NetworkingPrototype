@@ -1,8 +1,8 @@
-package com.mobiquityinc.prototype.wwprototype.rest;
+package com.mobiquityinc.nwprototype.rest;
 
 import android.content.Context;
 
-import com.mobiquityinc.prototype.wwprototype.R;
+import com.mobiquityinc.nwprototype.R;
 import com.squareup.okhttp.OkHttpClient;
 
 import javax.inject.Singleton;
