@@ -13,8 +13,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:1.1.3'
-        classpath 'com.uphyca.gradle:gradle-android-aspectj-plugin:0.9.12'
-
+        classpath 'com.jakewharton.hugo:hugo-plugin:1.2.1'
     }
 }
 

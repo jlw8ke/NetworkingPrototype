@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-apply plugin: 'android-aspectj'
+apply plugin: 'com.jakewharton.hugo'
 
 android {
     compileSdkVersion project.ext.compileSdkVersion
@@ -15,7 +15,7 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:22.0.0'
+    compile 'com.android.support:appcompat-v7:22.0.0'
     compile 'com.googlecode.mp4parser:isoparser:1.0.2'
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
     compile fileTree(dir: 'libs', include: ['*.jar'])
