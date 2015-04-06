@@ -27,7 +27,7 @@ public class MainActivityTest {
     @Test
     public void hasUIElements() {
         TestUtils.assertView(
-                ButterKnife.findById(activity, R.id.weather_content),
+                ButterKnife.findById(activity, R.id.city_name),
                 TextView.class,
                 true
         );

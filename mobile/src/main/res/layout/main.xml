@@ -11,9 +11,30 @@
         android:text="Get Weather" />
 
     <TextView
-        android:id="@+id/weather_content"
-        android:layout_width="fill_parent"
+        android:id="@+id/city_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.AppCompat.Title"/>
+
+    <TableLayout
+        android:id="@+id/citY_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TableRow>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature: "/>
+    
+    <TextView
+        android:id="@+id/city_temperature"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+        </TableRow>
+    </TableLayout>
+
 
 </LinearLayout>
 

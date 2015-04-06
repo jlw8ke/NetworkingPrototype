@@ -55,6 +55,13 @@ android {
         exclude 'META-INF/LICENSE'
         exclude 'META-INF/NOTICE'
     }
+
+    // Do not allow release builds of QaTest
+    android.variantFilter { variant ->
+        if(variant.buildType.name.equals('release') && variant.getFlavors().get(0).name.equals('qaTest')) {
+            variant.setIgnore(true);
+        }
+    }
 }
 
 dependencies {
@@ -79,6 +86,12 @@ dependencies {
 
     // Timber - Logging
     compile 'com.jakewharton.timber:timber:2.5.0'
+
+    // Unit Conversion
+    compile ('org.jscience:jscience:4.3.1') {
+        exclude group: 'org.javolution', module: 'javolution'
+    }
+
 
     // ================== TESTING LIBRARIES ======================
     testCompile 'junit:junit:4.12'

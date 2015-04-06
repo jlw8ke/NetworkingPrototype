@@ -3,11 +3,14 @@ package com.mobiquityinc.nwprototype;
 import android.content.Context;
 
 import com.mobiquityinc.nwprototype.rest.RestModule;
+import com.squareup.otto.Bus;
+import com.squareup.otto.ThreadEnforcer;
 
 import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
+import timber.log.Timber;
 
 @Module(
         library = true,
@@ -26,5 +29,13 @@ public final class AppModule {
     @Singleton
     Context provideApplicationContext() {
         return application;
+    }
+
+    @Provides
+    @Singleton
+    Bus provideBus() {
+        Bus bus = new Bus(ThreadEnforcer.ANY);
+        Timber.i("Created %s:%s", bus, System.identityHashCode(bus));
+        return bus;
     }
 }
