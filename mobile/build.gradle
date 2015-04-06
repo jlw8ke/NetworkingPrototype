@@ -67,6 +67,8 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.0.0'
+    compile 'com.android.support:cardview-v7:22.0.0'
+
 
     // Dagger - Dependency Injection
     def daggerVersion = '1.2.2'

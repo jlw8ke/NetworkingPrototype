@@ -2,8 +2,11 @@ package com.mobiquityinc.nwprototype.ui;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TableLayout;
 import android.widget.TextView;
 
@@ -24,14 +27,18 @@ import javax.measure.converter.UnitConverter;
 
 import butterknife.InjectView;
 import butterknife.OnClick;
+import butterknife.Optional;
 import retrofit.RestAdapter;
 
 public class MainActivity extends BaseActivity
 {
     @InjectView(R.id.btn_get_weather) Button weatherButton;
+    @InjectView(R.id.city_info) ViewGroup cityInfo;
+
     @InjectView(R.id.city_name) TextView cityTest;
-    @InjectView(R.id.citY_info) TableLayout cityInfo;
+    @InjectView(R.id.city_coordinates) TextView cityCoordinates;
     @InjectView(R.id.city_temperature) TextView cityTemperature;
+    //@Optional @InjectView(R.id.weather_image) ImageView weatherImage;
 
     @Inject RestAdapter restAdapter;
 
@@ -43,7 +50,7 @@ public class MainActivity extends BaseActivity
 
     @Override
     protected int getLayoutResource() {
-        return R.layout.main;
+        return R.layout.activity_main;
     }
 
     @OnClick(R.id.btn_get_weather)
@@ -60,9 +67,11 @@ public class MainActivity extends BaseActivity
 
         cityInfo.setVisibility(View.VISIBLE);
         cityTest.setText(city.getName());
+        cityCoordinates.setText(city.getCoord().toString());
 
         double temperature = toFahrenheit.convert(city.getMain().getTemp());
         cityTemperature.setText(df.format(temperature) + FAHRENHEIT.toString());
+
     }
 
 

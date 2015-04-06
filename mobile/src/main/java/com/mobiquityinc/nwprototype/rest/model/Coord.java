@@ -2,6 +2,10 @@
 package com.mobiquityinc.nwprototype.rest.model;
 
 import com.google.gson.annotations.Expose;
+import com.mobiquityinc.nwprototype.util.MathUtils;
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class Coord {
 
@@ -46,4 +50,13 @@ public class Coord {
         this.lat = lat;
     }
 
+    @Override
+    public String toString() {
+        return new StringBuilder().append("(")
+                .append(MathUtils.round(lat, 2))
+                .append(", ")
+                .append(MathUtils.round(lon, 2))
+                .append(")")
+                .toString();
+    }
 }
