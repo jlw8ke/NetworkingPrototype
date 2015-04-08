@@ -40,3 +40,12 @@ allprojects {
         }
     }
 }
+
+def onlyFor(task, config) {
+    gradle.taskGraph.whenReady { graph ->
+        println(graph.hasTask(task))
+        if (graph.hasTask(task)) {
+            project.configure(project, config)
+        }
+    }
+}

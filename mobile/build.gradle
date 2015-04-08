@@ -5,6 +5,11 @@ repositories {
 apply plugin: 'com.android.application'
 apply plugin: 'com.jakewharton.hugo'
 
+apply from: "signing.gradle"
+onlyFor("${project.name}:processBaseReleaseManifest", {
+    configureSigning()
+})
+
 android {
     compileSdkVersion project.ext.compileSdkVersion
     buildToolsVersion project.ext.buildToolsVersion
@@ -17,6 +22,15 @@ android {
         versionName project.ext.versionName()
     }
 
+    signingConfigs {
+        release {
+            storeFile file(config.storeFile)
+            storePassword config.storePassword
+            keyAlias config.keyAlias
+            keyPassword config.keyPassword
+        }
+    }
+
     buildTypes {
         debug {
             // Todo: Robolectric 3.0 cannot handle applicationIdSuffix.  Update when robolectic fixes
@@ -24,10 +38,12 @@ android {
             testCoverageEnabled true
         }
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
+
 
     productFlavors {
 
@@ -45,7 +61,7 @@ android {
     }
 
     lintOptions {
-        abortOnError false
+        // abortOnError false
         disable 'InvalidPackage'
     }
 
@@ -58,7 +74,7 @@ android {
 
     // Do not allow release builds of QaTest
     android.variantFilter { variant ->
-        if(variant.buildType.name.equals('release') && variant.getFlavors().get(0).name.equals('qaTest')) {
+        if (variant.buildType.name.equals('release') && variant.getFlavors().get(0).name.equals('qaTest')) {
             variant.setIgnore(true);
         }
     }
@@ -68,7 +84,6 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.0.0'
     compile 'com.android.support:cardview-v7:22.0.0'
-
 
     // Dagger - Dependency Injection
     def daggerVersion = '1.2.2'

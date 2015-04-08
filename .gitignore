@@ -23,3 +23,5 @@ local.properties
 
 # Gradle cache
 .gradle
+
+sign.properties

@@ -1,6 +1,8 @@
 
 package com.mobiquityinc.nwprototype.rest.model;
 
+import android.content.Context;
+
 import com.google.gson.annotations.Expose;
 
 public class Weather {

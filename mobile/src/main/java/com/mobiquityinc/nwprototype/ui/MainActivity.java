@@ -14,6 +14,7 @@ import com.mobiquityinc.nwprototype.R;
 import com.mobiquityinc.nwprototype.events.WeatherEvent;
 import com.mobiquityinc.nwprototype.rest.WeatherService;
 import com.mobiquityinc.nwprototype.rest.model.City;
+import com.mobiquityinc.nwprototype.util.MathUtils;
 import com.squareup.otto.Subscribe;
 
 
@@ -63,14 +64,13 @@ public class MainActivity extends BaseActivity
         City city = weatherEvent.getCity();
 
         UnitConverter toFahrenheit = KELVIN.getConverterTo(FAHRENHEIT);
-        DecimalFormat df = new DecimalFormat("#.##");
 
         cityInfo.setVisibility(View.VISIBLE);
         cityTest.setText(city.getName());
         cityCoordinates.setText(city.getCoord().toString());
 
         double temperature = toFahrenheit.convert(city.getMain().getTemp());
-        cityTemperature.setText(df.format(temperature) + FAHRENHEIT.toString());
+        cityTemperature.setText(MathUtils.round(temperature, 2) + FAHRENHEIT.toString());
 
     }
 

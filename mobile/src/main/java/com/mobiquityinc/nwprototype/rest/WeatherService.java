@@ -7,7 +7,7 @@ import retrofit.http.GET;
 import retrofit.http.Query;
 
 public interface WeatherService {
-    @GET("/weather")
+    @GET("/data/2.5/weather")
     City getCityWeatherData(@Query("q") String cityName);
 
 }
