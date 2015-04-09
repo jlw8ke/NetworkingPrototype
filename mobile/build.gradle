@@ -5,11 +5,6 @@ repositories {
 apply plugin: 'com.android.application'
 apply plugin: 'com.jakewharton.hugo'
 
-apply from: "signing.gradle"
-onlyFor("${project.name}:processBaseReleaseManifest", {
-    configureSigning()
-})
-
 android {
     compileSdkVersion project.ext.compileSdkVersion
     buildToolsVersion project.ext.buildToolsVersion
@@ -22,15 +17,6 @@ android {
         versionName project.ext.versionName()
     }
 
-    signingConfigs {
-        release {
-            storeFile file(config.storeFile)
-            storePassword config.storePassword
-            keyAlias config.keyAlias
-            keyPassword config.keyPassword
-        }
-    }
-
     buildTypes {
         debug {
             // Todo: Robolectric 3.0 cannot handle applicationIdSuffix.  Update when robolectic fixes
@@ -40,15 +26,12 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.release
+            apply from: "signing.gradle"
         }
     }
 
-
     productFlavors {
-
-        base {
-        }
+        base { }
 
         qaTest {
             renderscriptNdkModeEnabled true
@@ -74,7 +57,9 @@ android {
 
     // Do not allow release builds of QaTest
     android.variantFilter { variant ->
-        if (variant.buildType.name.equals('release') && variant.getFlavors().get(0).name.equals('qaTest')) {
+        def isRelease = variant.buildType.name.equals('release')
+        def isQaTest = variant.getFlavors().get(0).name.equals('qaTest')
+        if (isRelease && isQaTest) {
             variant.setIgnore(true);
         }
     }
